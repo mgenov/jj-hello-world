@@ -3,6 +3,7 @@ fn main() {
     print_world();
 }
 
+/// print_hello() prints hello world
 fn print_hello() {
     println!("Hello, world!");
 }
