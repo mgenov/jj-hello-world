@@ -11,3 +11,7 @@ fn print_hello() {
 fn print_world() {
     println!("World! A");
 }
+
+fn welcome(name: &str) {
+    println!("Hello, {}!", name);
+}
