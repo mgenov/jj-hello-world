@@ -8,5 +8,5 @@ fn print_hello() {
 }
 
 fn print_world() {
-    println!("World!");
+    println!("World! A");
 }
