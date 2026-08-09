@@ -1,19 +1,9 @@
 fn main() {
-    print_hello();
-    print_world();
-    welcome("world!");
-}
-
-/// print_hello() prints hello world
-fn print_hello() {
-    println!("Hello, world!");
-}
-
-fn print_world() {
-    println!("World! A");
-}
-
-/// welcome welcomes name.
-fn welcome(name: &str) {
-    println!("Hello, {}!", name);
+    let loud = std::env::var("HELLO_LOUD").is_ok();
+    let msg = "Hello, world!";
+    if loud {
+        println!("{}", msg.to_uppercase());
+    } else {
+        println!("{}", msg);
+    }
 }
