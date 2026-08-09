@@ -1,6 +1,7 @@
 fn main() {
     print_hello();
     print_world();
+    greet("world!");
 }
 
 /// print_hello() prints hello world
